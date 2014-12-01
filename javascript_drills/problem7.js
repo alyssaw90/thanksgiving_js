@@ -11,3 +11,12 @@ function fib(n) {
 }
 
 console.log(fib(10));
+
+//Recursive statement, example from class
+var fib = function(n) {
+	if (n <= 1) {
+		return n;
+	}
+	return fib(n-1) + fib(n-2);
+}
+console.log(fib(3));

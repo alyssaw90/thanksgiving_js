@@ -9,7 +9,8 @@ var zip = function(array1, array2) {
 
 	array1.forEach(function(element,index){
 		var subArray = [];
-		subArray.push(element, array2[index]);
+		subArray.push(array1[index]);
+		subArray.push(array2[index]);
 		newArray.push(subArray);
 	})
 	return newArray

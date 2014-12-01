@@ -15,7 +15,10 @@ var pair = function (object) {
 	})
 	return finalArray;
 }
-// console.log(keys)
+
+//returns just the first names in an array
+// console.log(Object.keys(obj));
+
 console.log(pair(obj));
 
 // obj.forEach(function(element){

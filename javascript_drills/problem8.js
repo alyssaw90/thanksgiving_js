@@ -15,16 +15,17 @@ var compress = function(string){
 	var output = '';
 	for (var i = 0; i <= string.length; i++) {
 		if(string[i] === string[i+1]){
-			counter++;
-			// output += counter+1;
-			output += counter; 
-			// console.log(counter);
-		} else {
-			counter = 1;
-			output += string.charAt(i);
-			// console.log("No");
-		}
-	}
+			counter+=1;
+		} else if (string[i] !== string[i+1]){
+			if(counter >1){
+				output += counter + string[i];
+				counter = 1;
+			} else {
+				output += string[i];
+			}
+
+		};
+	};
 	return output;
 };
 

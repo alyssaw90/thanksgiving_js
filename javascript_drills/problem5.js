@@ -21,6 +21,6 @@ function isPrime(number) {
 	}
 	//This will return whether number is prime or not.
 	return isPrime;
-}
+};
 
 console.log(isPrime(3));
